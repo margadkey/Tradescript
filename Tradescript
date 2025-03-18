@@ -2,7 +2,7 @@ local MarketplaceService = game:GetService("MarketplaceService")
 local Players = game:GetService("Players")
 
 local PurchaseEvent = ReplicatedStorage:WaitForChild("PurchaseItem")
-local productId = 3434155
+local productId = 15859910257
 
 local player = Players.LocalPlayer
 
