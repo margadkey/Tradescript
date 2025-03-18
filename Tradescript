@@ -1,17 +1,14 @@
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local MarketplaceService = game:GetService("MarketplaceService")
 local Players = game:GetService("Players")
 
 local PurchaseEvent = ReplicatedStorage:WaitForChild("PurchaseItem")
-local productId = 15859910257 -- Replace with your Developer Product ID
+local productId = 3434155
 
 local player = Players.LocalPlayer
 
--- Function to trigger purchase when the player clicks a button
 local function purchaseItem()
     MarketplaceService:PromptProductPurchase(player, productId)
 end
 
--- Example: If you have a GUI Button, connect it to the function
-local button = script.Parent -- Assuming this LocalScript is inside a button
+local button = script.Parent
 button.MouseButton1Click:Connect(purchaseItem)
